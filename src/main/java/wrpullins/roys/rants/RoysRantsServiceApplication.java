@@ -1,4 +1,4 @@
-package wrpullins.roys_rants_service;
+package wrpullins.roys.rants;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
