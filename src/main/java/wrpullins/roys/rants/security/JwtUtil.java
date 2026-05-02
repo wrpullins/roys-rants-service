@@ -27,6 +27,7 @@ public class JwtUtil {
     public String generateToken(String username, String firstName, String lastName, String email) {
         return Jwts.builder()
                 .setSubject(username)
+                .claim("username",username)
                 .claim("firstName",firstName)
                 .claim("lastName", lastName)
                 .claim("email",email)
