@@ -1,4 +1,4 @@
-package wrpullins.roys.rants.dto;
+package wrpullins.roys.rants.dto.response;
 
 import lombok.Builder;
 import lombok.Getter;

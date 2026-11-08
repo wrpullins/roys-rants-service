@@ -11,7 +11,7 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public Optional<User> findUserOnLogin(final String username, final String password){
+    public Optional<UserDbo> findUserOnLogin(final String username, final String password){
         return userRepository.findDistinctByUsernameAndPassword(username, password);
     }
 

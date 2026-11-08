@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
-public class User {
+public class UserDbo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

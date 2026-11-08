@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import wrpullins.roys.rants.dto.JwtToken;
+import wrpullins.roys.rants.dto.response.JwtToken;
 import wrpullins.roys.rants.exceptions.UnauthorisedException;
 import wrpullins.roys.rants.user.UserRepository;
 import wrpullins.roys.rants.security.JwtUtil;

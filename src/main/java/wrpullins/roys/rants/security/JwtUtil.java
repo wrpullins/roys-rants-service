@@ -8,8 +8,8 @@ import io.jsonwebtoken.security.Keys;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import wrpullins.roys.rants.dto.JwtToken;
-import wrpullins.roys.rants.user.User;
+import wrpullins.roys.rants.dto.response.JwtToken;
+import wrpullins.roys.rants.user.UserDbo;
 
 import java.security.Key;
 import java.util.Date;
@@ -57,7 +57,7 @@ public class JwtUtil {
         return claims.getSubject();
     }
 
-    public JwtToken createUserToken(User user){
+    public JwtToken createUserToken(UserDbo user){
         return JwtToken
                 .builder()
                 .token(generateToken(user.getUsername(),user.getFirstName(),user.getLastName(), user.getEmail()))
